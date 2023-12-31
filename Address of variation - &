@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+  int x;
+  printf("%d", &x); // & always shows the address of variable so here it is priniting the address of x -- some random value 
+}
