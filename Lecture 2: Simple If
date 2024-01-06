@@ -1,0 +1,53 @@
+Simple if statement is used for decision-making.
+
+Syntax:-
+
+if (some condition) {
+
+    -- operations to be done if condition is true --
+
+}
+
+"some condition" is an expression. It can be true or false. If the expression is true, then the inner code of the if condition will execute.
+
+    Line1 code
+
+    Line2 code
+
+    if (condition) {
+
+        Line3 code
+
+    }
+
+    Line4 code
+
+So Line3 would only execute when the condition or expression inside the if condition is True.
+
+Let's check if a number is odd or even with the help of a simple if statement.
+
+Pseudo code:-
+
+#include<stdio.h>
+
+int main() {
+
+    int x;
+
+    scanf(“%d”, &x);
+
+    if (x % 2 == 0) {
+
+        printf(“EVEN”);
+
+    }
+
+    if (x % 2 != 0) {
+
+        printf(“ODD”);
+
+    }
+
+    return 0;
+
+}
