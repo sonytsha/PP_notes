@@ -1,0 +1,9 @@
+In this article, we will discuss decision-making. In a program, at a certain time, we need to make decisions to solve a problem.
+
+For example, consider a problem: Given a number, we have to find whether the number is even or odd.
+
+We can use the modulo operator for solving this problem. If the number modulo 2 is 1, then the number is odd, else the number is even.
+
+int x = y % 2 ;
+
+Now check if the value of x is 0 then the number is even else the number is odd.
