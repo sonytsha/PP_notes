@@ -1,0 +1,61 @@
+In this article, we will talk about the unary operators. There will be only one operand.
+
+
+Increment operator (++): The simple meaning of this operator is to increase the operand value by 1.
+
+Eg. int a = 5;
+
+  a++;  // a = 6;
+
+The increment operator can be used in two ways: prefix increment operator and suffix increment operator.
+
+If the ++ operator is in the prefix of the operand, then it will be a prefix increment. 
+
+Eg. ++a;
+
+It is also known as pre-increment. by using this operator, first the value of the variable will be changed and then it will be returned.
+
+Eg.
+
+int a = 5;
+
+int x = ++a // now the value of x will be 6 and the value of a will also be 6.
+
+If the ++ operator is in the suffix of the operand, then it will be a suffix increment.
+
+Eg. a++;
+
+It is also known as post-increment. By using this operator, first, the value of the variable will be returned and then the variable value will be incremented.
+
+Eg. 
+
+int a = 5;
+
+int x = a++ // now the value of x will be 5 and the value of a will be 6.
+
+It works for decrement operators in the same ways.
+
+
+Decrement operator:  The simple meaning of this operator is to decrease the operand value by 1.
+
+Eg. int a = 5;
+
+a–; // a = 4;
+
+There are two types of decrement operators. pre-decrement and post-decrement.
+
+In the case of pre-decrement operator, first, the value of the variable is decremented and then returned.
+
+Eg.
+
+int a = 5;
+
+  int x = –a; // now the value of x will be 4 and the value of a will also be 4.
+
+In the case of post-decrement operator, first, the value of the variable is returned and then decremented.
+
+Eg.
+
+int a = 5;
+
+  int x = a–; // now the value of x will be 5 and the value of a will be 4.
