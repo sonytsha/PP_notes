@@ -1,0 +1,78 @@
+Consider a problem: There is an exam of 100 maximum marks. you have to assign the grade to the student. you will assign the grades A, B, and C. there is a rule for assigning the grades. if the score of a student is greater than 70 then the grade will be A, if the score is greater than 40, then the grade will be B, else grade will be C.
+
+Let's write code for it.
+
+#include<stdio.h>
+
+int main() {
+
+    int x;
+
+    scanf(“%d”, &x);
+
+    if (x > 70) {
+
+        printf(“Grade A”);
+
+    }
+
+    if (x > 40) {
+
+        printf(“Grade B”);
+
+    }
+
+    if (x >= 0) {
+
+        printf(“Grade C”);
+
+    }
+
+    return 0;
+
+}
+
+
+Do you think this code is correct? 
+
+When we run this code for x = 75, the output would be:
+
+Grade A
+
+Grade B
+
+Grade C
+
+This is because all the conditions here are true for x = 75. We need to ensure that only one statement should be printed. We can do this by adding more conditions.
+
+#include<stdio.h>
+
+int main() {
+
+    int x;
+
+    scanf(“%d”, &x);
+
+    if (x > 70) {
+
+        printf(“Grade A”);
+
+    }
+
+    if (x > 40 and x <= 70) {
+
+        printf(“Grade B”);
+
+    }
+
+    if (x >= 0 and x <= 40) {
+
+        printf(“Grade C”);
+
+    }
+
+    return 0;
+
+}
+
+This code will run fine for the above problem.
