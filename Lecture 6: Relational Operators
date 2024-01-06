@@ -1,0 +1,30 @@
+Relational operators are used for comparison purposes. There are >, <, >=, and many more relational operators. When we compare two variables or values, it returns something. In the case of relational operators, True (a non-zero value 1 ) or False (zero 0) is returned.
+
+Eg.   x > y // It will return true (a non-zero value) if the value of x is greater than the value of y else it will return false (zero 0).
+
+ #include<stdio.h>
+
+Int main(){
+
+    int a = 7;
+
+    int b = a +  3;
+
+    printf(“%d ” , a > b);
+
+    return 0;
+
+}
+
+Output : 0
+
+Explanation: Because the expression is not true, the relational operator returned false, that is 0.
+
+== operator: It is used for equality checks.
+
+ Eg: a == b; // returns true if both a and b are equal else it will return false.
+
+!= operator: It is used for non-equality checks.
+
+Eg. a != b; // returns true if both a and b are not equal else it will return false.
+
