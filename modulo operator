@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+int x,y;
+ scanf("%d %d", &x, &y);
+ int quo = x/y; // 15/4 = 3 
+ int rem = x - quo * y ; // from the below formula , rem = divident - divisor * quotient
+ printf("%d %d", quo, rem);
+}
+
+
+/* 2 int x = 15, y= 4, quotient = 3, remainder = 3 
+// use division operator
+divident = 15, divisor = 4, quo = 3, rem =3 
+divident = divisor * quo + rem */
