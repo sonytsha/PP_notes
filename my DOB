@@ -1,0 +1,6 @@
+#include<stdio.h>
+#include<conio.h>
+int main() {
+int x = 10, y=70, z=1009;
+printf(" My birth date is : %d - %d - %d ",x,y,z);
+}
