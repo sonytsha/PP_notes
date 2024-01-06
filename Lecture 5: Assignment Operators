@@ -1,0 +1,23 @@
+Eg. x  = y;
+
+On the left side, there should be a variable but on the right side, there can be a value or expression. 5 = x is an invalid operation.
+
+There are some special assignment operators like += , -= , *= , /= and %= (also called shorthand operators).
+
+Thing to note: There shouldn't be a space between the symbols: + = is wrong, it should be +=, they are used in conjunction.
+
+Eg. a += x;
+
+         That means a = a + x;
+
+ a  *= x; // a = a * x
+
+
+
+#include<stdio.h>
+int main() {
+int a = 7 ;
+a %= 3; //  it can be += , -= but  not + = , there should not be any space
+printf("%d \n", a);
+return 0 ;
+}
