@@ -1,0 +1,110 @@
+Let’s take this piece of code. What will be the output of the above code?
+
+#include<stdio.h>
+
+int main() {
+
+    int x = 50;
+
+    if (x > 0)
+
+        printf(“x > 0 \n”);
+
+    if (x <= 50)
+
+        printf(“x <= 50 \n”);
+
+    if (x >= 50)
+
+        printf(“x >= 50 \n”);
+
+    if (x > 50)
+
+        printf(“x > 50 \n”);
+
+    return 0;
+
+}
+
+The output will be 
+
+ x > 0  // first if condition is true
+
+ x <= 50 // second if condition also true 
+
+ x >= 50 // third if condition is also true.
+
+But the fourth if condition is false so it will not be printed.
+
+Let’s consider a problem in which you have given n1 = 2, n2 = 3, n3 = 5, and a number x. You need to count how many numbers from n1, n2 and n3 divide x.
+
+Pseudo code:-
+
+#include<stdio.h>
+
+int main() {
+
+    int n1 = 2, n2 = 3, n3 = 5;
+
+    int x;
+
+    int count = 0;
+
+    scanf(“%d”, &x);
+
+    if (x % n1 == 0)
+
+        count++;
+
+    if (x % n2 == 0)
+
+        count++;
+
+    if (x % n3 == 0)
+
+        count++;
+
+    printf(“%d”, Count);
+
+    return 0;
+
+}
+
+If you need to write multiple statements inside the if condition, you have to use curly braces.
+
+Eg. 
+
+if(x % n3 == 0)
+
+{
+
+    count++;
+
+    printf(“x is divisible by n3 \n”);
+
+}
+
+
+
+
+**************************************************************
+
+#include<stdio.h>
+int main() { 
+int a = 2, b= 3, c= 5, d, count;
+scanf("%d", &d);
+if(d % a == 0) {
+count++;
+printf("it is divisble by 2\n");
+}
+if(d%b ==0) {
+count++;
+printf(" it is divisible by 3\n ");
+}
+if ( d%c==0) {
+count ++;
+printf("it is divisble by 5");
+}
+printf("%d", count);
+return 0 ;
+}
