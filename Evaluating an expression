@@ -1,0 +1,17 @@
+// rules for evaluating an expression
+// a+b*c/d-e%f+g
+// 5+2*3 = 5+6=11
+// 7*3=21
+// BODMAS : convention, operator precedence
+// ( *,/,%) [ L->R] > (+,-) [R ->L]
+// if we have operators of equal precedence , how to evaluate  ? == > associativity rule
+// L->R ( left tpo right) , R -> L
+
+#include<stdio.h>
+int main() {
+int a,b,c;
+scanf("%d %d %d" , &a, &b, &c);
+int z= a * b / c;
+printf("%d", z);
+return 0;
+}
