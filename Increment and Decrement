@@ -59,3 +59,22 @@ Eg.
 int a = 5;
 
   int x = a–; // now the value of x will be 5 and the value of a will be 4.
+
+
+
+# include < stdio.h>
+int main() {
+int a=5;
+a--;
+printf("%d \n", a);
+return 0;
+}
+
+// binary arithmetic operators
+//unary arithmetic operators
+// ++ : increment : +1
+// -- : decrement : -1
+// a-- ==> a= a-1
+// as prefix + suffix
+// ++a, --a : pre-increment/pre-decrement  : val is first changed and then returned
+// a++ , a-- : post-increment/ post-decrement : curr val is first returned and then changed
