@@ -7,3 +7,6 @@ printf("%d", x%y);
 
 /* modulo operator  : % 
 x% y = 15 % 6 = 3  */
+
+
+modulo operator can not be applied on float or decimal operator, module operator y can not be 0 
