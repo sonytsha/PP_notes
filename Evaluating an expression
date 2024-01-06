@@ -3,7 +3,7 @@
 // 5+2*3 = 5+6=11
 // 7*3=21
 // BODMAS : convention, operator precedence
-// ( *,/,%) [ L->R] > (+,-) [ L-> R]
+// *********** ( post ++ , -- ) > (pre ++, --) > ( *,/,%) [ L->R] > (+,-) [ L-> R] *************************************
 // if we have operators of equal precedence , how to evaluate  ? == > associativity rule
 // L->R ( left tpo right) , R -> L
 
