@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() { 
+int x,y,z;
+scanf("%d %d %d" , &x, &y, &z);
+if ( x> 0) { 
+printf("Hi \n");
+if ( y > 0) {
+printf("Hello \n");
+if ( z> 10) {
+printf("hola \n");
+}
+}
+printf("bye \ n");
+}
+return 0;
+}
