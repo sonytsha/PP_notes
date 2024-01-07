@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() {
+int marksl
+scanf("%d",  &marks);
+if ( marks > 70 ) {
+printf("grade A \n"); } 
+else if( marks > 40 ) {
+printf("grade B\n"); }
+else if ( marks > 20 ) {
+printf("grade C \n"); }
+else  { 
+printf("grade D \n"); }
+return 0;
+}
+
+
+// 70 : A
+// > 40 : B
+// > 20 : C
+// >=0 : D
+// if marks > 70 A; else marks > 40 B ; else if marks > 20 C ;
+// else-if ladded : if( C1 ) ... else if( C2).... else if ( C3) .... else if ( C4).... else( optional )
