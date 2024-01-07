@@ -1,0 +1,63 @@
+In a single program, multiple if-else conditions can be present. 
+
+Syntax:-
+
+if (condition) {
+
+// code
+
+} else {
+
+// code
+
+}
+
+// code
+
+if (condition) {
+
+// code
+
+} else {
+
+// code
+
+}
+
+// code
+
+We can consider the following example for understanding multiple if-else.
+
+Let’s say person A will pass if he scores 50% and person B will pass if he scores 40%. We can solve this problem using multiple if-else.
+
+#include<stdio.h>i
+
+int main() {
+
+int scoreA, scoreB;
+
+scanf(“%d %d”, &scoreA, &scoreB);
+
+if(scoreA >= 50){
+
+printf(“A passed”);
+
+} else {
+
+printf(“A failed”);
+
+}
+
+if(scoreB >= 50){
+
+printf(“B passed”);
+
+} else {
+
+printf(“B failed”);
+
+}
+
+return 0;
+
+}
