@@ -1,0 +1,69 @@
+Let’s consider the code given below. This code checks if the given number is even or odd.
+
+ #include<stdio.h>
+
+int main() {
+
+    int x;
+
+    scanf("%d", &x);
+
+    if (x % 2 == 0) {
+
+        printf("EVEN\n");
+
+    }
+
+    if (x % 2 != 0) {
+
+        printf("ODD \n");
+
+    }
+
+    return 0;
+
+}
+
+Can both conditions be true at the same time? No, they can't. Both statements are the negation of each other.
+
+So we can avoid the second condition using the if else condition.
+
+Syntax:-
+
+    if(condition){
+
+        code
+
+    } else {
+
+        code
+
+    }
+
+If the condition is true then the if part of  the code will be executed. Otherwise in case of false, else part of the code will be executed. One of the blocks will be executed from the if and else block. Nothing should be there between the if and else part.
+
+Above code using if else:
+
+eg.
+
+#include<stdio.h>
+
+int main() {
+
+    int x;
+
+    scanf("%d”, &x);
+
+    if (x % 2 == 0) {
+
+        printf(“EVEN \n”);
+
+    } else {
+
+        printf(“ODD \n”);
+
+    }
+
+    return 0;
+
+}
