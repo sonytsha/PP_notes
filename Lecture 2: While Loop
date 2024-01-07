@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main() {
+
+int c = 0;
+while ( c != 3) {
+printf("I am happy\n");
+c++;
+}
+return 0;
+}
+
+/*  or ******************88
+
+#include<stdio.h>
+int main() {
+
+int c = 0;
+while ( c < 3 ) {
+printf("I am happy\n");
+c++;
+}
+return 0;
+}
+
+// "I am happy"
+// a lot of redundant lines of code
+// to runs particular logic for a certain number of times
+// while - loo[
+// while ( a certain condition is true ==> expr )
+// L1
+// L2
+// }
