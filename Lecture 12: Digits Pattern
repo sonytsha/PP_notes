@@ -1,0 +1,22 @@
+370987
+37098737098 
+3709 
+370 
+37 
+3 
+0 
+
+
+#include<stdio.h>
+int main() {
+int n;
+scanf("%d", &n);
+printf("%d", n);
+int ans = 0;
+while (n>0) { // n as positive
+int y = n % 10;
+ans = ans + y;
+ n = n /10;
+ printf("%d \n", n);
+}
+}
