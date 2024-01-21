@@ -1,0 +1,16 @@
+// INFINITE LOOP
+
+#include<stdio.h>
+int main(){
+int c= 0, i=0;
+while(c<5) {
+printf("Inside while loop \n");
+if ( i%2==0) {
+c++;
+}
+else {
+c--;
+}
+i++;
+}
+}
