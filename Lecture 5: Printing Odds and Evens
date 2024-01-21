@@ -1,0 +1,21 @@
+// from n natural numbers first print odd numbers, then even number
+
+#include<stdio.h>
+int main(){
+int n;
+int c = 0;
+scanf("%d", &n);
+int i=1;
+while(c < n) {
+    printf("%d ",i);
+    i = i + 2;
+    c++;
+}
+printf("\n");
+ c = 2;
+while(c < n) {
+    printf("%d ",i);
+    i = i + 1;
+    c++;
+}
+}
