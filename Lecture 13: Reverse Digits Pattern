@@ -1,0 +1,19 @@
+n = 209106
+2
+20
+209
+2091
+20910
+209106
+// by different powers of n
+n = 209106, n = n/10, n = 20910
+n = 209106, n = n/100, n= 2091
+n = 209106, n = n/1000, n= 209
+n = 209106, n = n/10000, n= 20
+n = 209106, n = n/100000, n= 2
+n = 209106, n = n/1000000, n= 0
+
+// generate that power of 10 whose division with n gives us single digit
+
+
+
