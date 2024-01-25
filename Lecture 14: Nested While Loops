@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main() {
+int i = 0;
+while (i < 3)  {
+int j = 0;
+while(j < 5) {
+printf("%d", j);
+j++;
+}
+i++;
+printf("\n");
+}
+return 0;
+}
+
+
+//// output :
+01234
+01234
+01234
+
+//
+i = 0 , j = 0 : 0 1 2 3 4
+i = 1 , j = 0 : 0 1 2 3 4
+i = 2 , j = 0 : 0 1 2 3 4
