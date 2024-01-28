@@ -1,0 +1,26 @@
+// a code is functionally correct but not performing well 
+// run time - how long does it take to run
+// memory usage - how much ram its taking
+// when I have got my answer , come out , why to run loop again and again
+// break => you immediately come out of the current loop
+
+#include<stdio.h>
+int main() {
+int x,y,maximum;
+int ans = -1;
+scanf("%d%d", &x, &y);
+if( x<=y) {
+maximum = y;}
+else {
+maximum = x ;
+}
+while ( maximum <= x*y) {
+if( maximum % x == 0 && maximum % y == 0 && ans == -1) {
+ans = maximum;
+break;
+}
+maximum ++;
+}
+printf("%d\n", ans);
+return 0;
+}
