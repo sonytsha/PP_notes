@@ -1,0 +1,27 @@
+random code test
+
+#include<stdio.h>
+int main() {
+int i =0;
+while(i< 10)  {
+printf("I am happy");
+i++;
+if( i == 4)
+break;
+}
+return 0;
+}
+
+2ND ---
+
+#include<stdio.h>
+int main() {
+int i = 0;
+while(1) {
+printf("I am happy");
+if(i==4)
+break;
+}
+return 0;
+}
+
