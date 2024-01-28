@@ -1,0 +1,64 @@
+lowest common multiple
+// 4,6 = 12
+// 4 = 4,8,12,16,20,24.....
+// 6 = 6,12,18,24,30......
+// if there are 2 numbers and y smaller, then the LCM can never be smaller than b, coz multiple of that number will always be greater than or equal to that number
+// if suppose a is a common multiple means a has to be greater than both x as well as y
+// if 5, 20 , then lowest common multiple is 20
+// MAXIMUM (X,Y) <= LCM ( x,y) <= X*Y
+// if there is no common number in x and y means x*y will be your lowest common multiple
+// for ex : 7 and 17 , 7 = 7,14,21,28.... , 17 = 17,34,51..... , LCM = 7*17= 119
+
+// SUPPOSE 5,7 , THEN RANGE IS FROM 7 TO 5*7=35, NOW FIRST NUMBER WHICH HAPPENS TO BE THE MULTIPLE OF BOTH 5 AND 7 , WILL BE REGARDED AS THE LCM
+
+
+#include<stdio.h>
+int main() {
+int x,y,maximum;
+int ans = -1;
+scanf("%d%d", &x, &y);
+if( x<=y) {
+maximum = y;}
+else {
+maximum = x ;
+}
+while ( maximum <= x*y) {
+if( maximum % x == 0 && maximum % y == 0 && ans == -1) {
+ans = maximum;
+}
+maximum ++;
+}
+printf("%d\n", ans);
+return 0;
+}
+
+// this is a trick to update value only once, and prevent it to update it again and again ( ans = maximum ) 
+// why ans = -1 and putting it in if, x and y both are positive and the ans will also be positive, if the value of ans remains -1 if would def mean tht the current value is the
+lowest. as we want to find the lowest means we want to update ans = maximum only once, 
+6,12 = when it finds 12 it should stop or else it run again and take 24 and so on
+
+
+OR 
+
+4,6 === 2nd way is istead of 6 to 24 , if you run the loop from 24 to 6, you can keep updating it
+
+#include<stdio.h>
+int main() {
+int x,y,maximum;
+int i=1, ans;
+scanf("%d%d", &x, &y);
+int p = x*y;
+if( x<=y) {
+maximum = y;}
+else {
+maximum = x ;
+}
+while ( p >= maximum) { 
+if( p % x ==0 && p %y ==0) {
+ans = p;
+}
+p--;
+}
+printf("%d", ans);
+return 0;
+}
