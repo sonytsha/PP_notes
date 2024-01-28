@@ -1,0 +1,34 @@
+// a,b- find GCD - greatest common divisor // HCF - HIGHEST COMMON FACTOR
+// 6,14 - 2 
+// 6  - 1,2,3,6
+// 14 - 1,2,7,14
+// a,b : x < =a // if a and b are 2 number and a is the smallest one, x is factor, then x must be smaller than or equal to a
+// 40, 120 = min( 40, 120) 
+// Factor of a number can never be greater than a number, factor of a number is always smaller than or equal to that number
+// 9,17 = 1
+// range of GDC
+1 <= GCD (x,y) <= MIN( X,Y)
+// we have to run a loop which runs from 1 to min(x,y) and for a particular value of i , is that i able to divide x as well as y. if i is able to divide x and y both means i is a common factor.
+// out of all such i , find the largest i
+
+#include<stdio.h>
+int main() {
+int x,y, minimum, ans;
+int i=1;
+scanf("%d%d", &x, &y);
+if( x <= y) {
+minimum = x;
+}
+else {
+minimum = y;
+}
+while( i<=minimum ) {
+if (x%i ==0 && y%i == 0) {
+ans = i;
+}
+i++;
+}
+printf("%d", ans);
+return 0;
+}
+
