@@ -1,0 +1,13 @@
+// for loop - 3 componenets , separated by ; 
+// 1 : initialization of loop control variable
+// 2 : test condition
+// 3 : increase/decrease the loop control variable
+
+#include<stdio.h>
+int main() {
+int i;
+for ( i = 0;i <= 10;i++) {
+printf("hello world");
+}
+return 0;
+}
