@@ -1,0 +1,23 @@
+1 + x + x^2/2! + x^3/3! + x^4/4! + ..........
+// int x, n
+sum of series for first n terms
+
+#include<stdio.h>
+int main() {
+int n,x,i,j;
+scanf("%d%d", &n, &x);
+double ans = 0;
+for( i=0;i<=n; i++) {
+    double prod = 1;
+    for ( j=1;j<=i;j++){
+        prod = prod * x;
+    }
+    double fact = 1;
+    for( j=1; j<=i; j++) {
+        fact = fact * j;
+    }
+    ans = ans + prod/fact;
+}
+printf("%lf", ans);
+return 0;
+}
