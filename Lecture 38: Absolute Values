@@ -1,0 +1,72 @@
+fabs():- This function returns the absolute value of a number. Absolute value of a number means the distance of a number from 0.
+
+Eg.
+
+The absolute value of 7 = 7
+
+The absolute value of -7 = 7
+
+#include<stdio.h>
+
+#include<math.h>
+
+int main() {
+
+int x = fabs(-9);
+
+printf(“%d”, x);
+
+return 0;
+
+}
+
+The output will be 9.
+
+Fabs is a floating point function which means it expects the float value in the argument.
+
+
+abs():- It is part of the stdlib header file. We can use abs() for integer values. The usage would be the same as that of fabs(). We can implement the abs function on our own as well.
+
+You are given two integers. You need to find the absolute difference between both numbers.
+
+#include<stdio.h>
+
+#include<stdlib.h>
+
+int main(){
+
+int x, y;
+
+scanf(“%d %d”, &x, &y);
+
+if(x >= y) {
+
+printf(“%d“, x-y);
+
+} else {
+
+printf(“%d“, y-x);
+
+}
+
+return 0;
+
+}
+
+We can also write this code using the abs() function.
+
+#include<stdio.h>
+
+#include<stdlib.h>
+
+int main() {
+
+int x, y;
+
+scanf(“%d %d”, &x, &y);
+
+printf(“%d”, abs(x - y) );
+
+return 0;
+
+}
