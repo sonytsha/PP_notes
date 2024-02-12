@@ -1,0 +1,24 @@
+1 + x + x^2/2! + x^3/3! + x^4/4! + ..........
+// int x, n
+sum of series for first n terms
+
+SHORT CUT : 
+
+
+// x^i/ i!   prod : x^i, fact = i!
+i+1 th term is : x^(i+1) / ( i+1)!
+
+
+#include<stdio.h>
+int main() {
+int N,x,i;
+scanf("%d %d", &N, &x);
+double ans =0, prod = 1, fact = 1;
+for ( i = 0; i <=N; i++) {
+ans += prod/fact;
+prod *=x;
+fact *= (i+1);
+}
+printf("%lf\n", ans);
+return 0;
+}
