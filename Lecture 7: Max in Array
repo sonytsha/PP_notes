@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Assuming the first element as the maximum initially
+    int max = arr[0];
+
+    // Finding the maximum element in the array
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("The maximum element in the array is: %d\n", max);
+
+    return 0;
+}
+
+--------------------------------------------
+
+OR 
+
+#include<stdio.h>
+#include<limits.h>
+int main() {
+int n,i;
+scanf("%d", &n);
+int arr[n];
+for(i =0;i<n; i++) {
+scanf("%d", &arr[i]);
+}
+// logic to find max
+int maxm = INT_MIN;
+for(i=0; i<n;i++) {
+if(arr[i] > maxm) 
+maxm = arr[i];
+}
+printf("%d\n", maxm);
+return 0;
+}
