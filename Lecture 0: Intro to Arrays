@@ -1,0 +1,2 @@
+index can be between 0 to n-1 
+or else it will be "index out of bound error"
