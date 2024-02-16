@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+#define MAX_SIZE 100 // Maximum size of the array
+
+int main() {
+    int array[MAX_SIZE];
+    int size, i, position;
+
+    // Input the size of the array
+    printf("Enter size of the array: ");
+    scanf("%d", &size);
+
+    // Input elements of the array
+    printf("Enter elements of the array: ");
+    for (i = 0; i < size; i++) {
+        scanf("%d", &array[i]);
+    }
+
+    // Input the position of the element to delete
+    printf("Enter the position of the element to delete: ");
+    scanf("%d", &position);
+
+    // Check if position is valid
+    if (position < 0 || position >= size) {
+        printf("Invalid position!\n");
+        return 1; // Exit with error
+    }
+
+    // Shift elements to the left to overwrite the element to be deleted
+    for (i = position; i < size - 1; i++) {
+        array[i] = array[i + 1];
+    }
+
+    // Decrement the size of the array
+    size--;
+
+    // Print the array after deletion
+    printf("Array after deletion:\n");
+    for (i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
