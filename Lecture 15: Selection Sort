@@ -1,0 +1,36 @@
+1) find smallest
+2) swapping it with some other element
+
+
+#include<stdio.h>
+#include<limits.h>
+int main() {
+int n,i,j;
+scanf("%d", &n);
+int arr[n];
+for( i=0;i<n;i++) {
+scanf("%d", &arr[i]) ;
+}
+for ( i=0;i<n;i++) {
+// for finding min element in ( i ...n-1) & swap it with arr[i]
+int minm = INT_MAX, idx;
+for( j=i;j<n;j++) {
+if(arr[j] < minm) {
+minm = arr[j];
+idx = j;
+}
+}
+int temp = arr[i];
+arr[i] = arr[idx];
+arr[idx] = temp;
+}
+for( i=0;i<n;i++){
+printf("%d", arr[i]);
+}
+printf("\n");
+return 0;
+}
+
+
+// 1st : smallest element at idx = 0
+// 
