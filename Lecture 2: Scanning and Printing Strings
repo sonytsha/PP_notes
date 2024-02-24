@@ -1,0 +1,34 @@
+-------no & is required in scanf, here word[i] is a character but with %s , word is a string
+#include<stdio.h>
+int main() {
+char word[100];
+scanf("%s", word);
+printf("%s\n", word);
+return 0;
+}
+
+
+------- Last character is assigned as null
+#include<stdio.h>
+int main() {
+    int i;
+char word[100];
+scanf("%s", word);
+for( i=0; word[i] != '\0'; i++) 
+printf("%c", word[i]);
+printf("\n");
+return 0;
+}
+
+
+
+#include<stdio.h>
+int main() {
+char word1[100];
+char word2[100];
+scanf("%s %s", word1, word2);
+printf("%s %s\n", word1, word2);
+return 0;
+}
+
+
