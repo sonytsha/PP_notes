@@ -1,0 +1,58 @@
+rows <=> columns
+
+
+#include<stdio.h>
+int main() {
+int i,j,n;
+scanf("%d", &n);
+int a[n][n];
+for (i=0;i<n;i++) {
+for(j=0;j<n;j++) {
+scanf("%d", &a[i][j]);
+}
+}
+int mat2[n][n];
+for(i=0; i < n;i++) {
+for (j=0;j<n;j++) {
+ mat2[i][j] = a[j][i];
+}
+}
+printf("**************\n");
+for(i=0; i <n;i++) {
+for (j=0;j<n;j++) {
+printf("%d ", mat2[i][j]);
+}
+printf("\n");
+}
+return 0;
+}
+
+ANOTHER WAY :
+
+#include<stdio.h>
+int main() {
+int i,j,n;
+scanf("%d", &n);
+int a[n][n];
+for (i=0;i<n;i++) {
+for(j=0;j<n;j++) {
+scanf("%d", &a[i][j]);
+}
+}
+for(i=0; i < n;i++) {
+for (j=i;j<n;j++) {
+ int temp = a[i][j];
+ a[i][j] = a[j][i];
+ a[j][i] = temp;
+}
+}
+printf("**************\n");
+for(i=0; i <n;i++) {
+for (j=0;j<n;j++) {
+printf("%d ", a[i][j]);
+}
+printf("\n");
+}
+return 0;
+}
+
