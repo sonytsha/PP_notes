@@ -1,0 +1,49 @@
+##include<stdio.h>
+int main() {
+char word[7];
+int i;
+for(i=0;i<7;i++) {
+scanf("%c", &word[i]);
+}
+for(i=0;i<7;i++) {
+printf("%c", word[i]);
+}
+printf("\n");
+}
+
+ORRRRRRRRRRRRRRRRRRR
+
+##include<stdio.h>
+int main() {
+char word[7] = {'a','b','c','d','e','f',g'};
+int i;
+for(i=0;i<7;i++) {
+printf("%c", word[i]);
+}
+printf("\n");
+}
+
+
+##include<stdio.h>
+int main() {
+char word[7] = "abcdefg";
+int i;
+for(i=0;i<7;i++) {
+printf("%c", word[i]);
+}
+printf("\n");
+}
+
+
+#include<stdio.h>
+int main() {
+char word[7] = "vivek";
+int i;
+for(i=0; word[i]!='\0';i++) {
+printf("%c\n", word[i]);
+}
+printf("\n");
+}
+
+
+// always terminate with NULL
