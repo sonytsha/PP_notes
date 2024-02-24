@@ -1,0 +1,18 @@
+%s when sees a space it stop scanning 
+
+to find the length of the string : as we know that the last character of the string is null which is initialized by '\0', hence we are running loop till it finds null character
+// why i =0 initialized, in case of for loop we initalize i value within the loop but in while loop , if we dont initialize then it till wake random garbage value
+// while word of garbage value will prooduce error hence assigned to 0
+
+#include<stdio.h>
+int main() {
+char word1[100] = "this is awesome!!!";
+int i=0, len = 0;
+while(word1[i] !='\0') {
+len++;
+i++;
+}
+printf("%d\n", len);
+return 0;
+}
+
