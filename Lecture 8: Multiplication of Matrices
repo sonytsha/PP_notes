@@ -1,0 +1,46 @@
+multiplication is only possible when they have same no : suppose m*n and n*p matrix then psble, 2*3 matrix 1 and 3*4 matrix2 multiplication is psble, the multiplication
+result ans will be multi[m][p]
+
+
+
+#include<stdio.h>
+
+int main() {
+    int m, n, p, i, j, k;
+    scanf("%d%d%d", &m, &n, &p);
+    int a[m][n];
+
+    printf("Enter the elements in the first array:\n");
+    for(i = 0; i < m; i++) {
+        for(j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    int b[n][p];
+    printf("Enter the elements in the second array:\n");
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < p; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    int c[m][p];
+    for(i = 0; i < m; i++) {
+        for(j = 0; j < p; j++) {
+            c[i][j] = 0;
+            for(k = 0; k < n; k++) {
+                c[i][j] += a[i][k] * b[k][j];
+            } 
+        }
+    }
+
+    printf("Resultant Matrix:\n");
+    for(i = 0; i < m; i++) {
+        for(j = 0; j < p; j++) {
+            printf("%d ", c[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
