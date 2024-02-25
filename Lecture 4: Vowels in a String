@@ -1,0 +1,56 @@
+REVERSE OF A STRING : 
+
+#include<stdio.h>
+int main() {
+char word[100] = "This is awesome!!!!";
+int len = 0, i=0;
+while( word[i]!='\0') {
+i++;
+len++;
+}
+for( i = len-1; i>=0;i--) { // len-1 because the last one is null
+printf("%c", word[i]);
+}
+printf("\n");
+return 0;
+}
+
+FIND THE VOWELS IN A STRING : 
+
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+    char word[100] = "Hello! My name is Sony Shaw. How are you?";
+    int i, count = 0;
+    int len = strlen(word);
+    for (i = 0; i < len; i++) {
+        char ch = word[i];
+        if (ch == 'a' || ch == 'e' || ch == 'o' || ch == 'i' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            count++;
+        }
+    }
+    printf("%d\n", count);
+    return 0;
+}
+
+ORRR 2ND WAY  : 
+#include<stdio.h>
+int main() {
+char word[100] = "this is awesome";
+int len =0,i=0,cnt =0, j;
+char vowels[100] ="aeiouAEIOU";
+while(word[i] !='\0') {
+for( j=0; vowels[j]!='\0';j++) {
+if(word[i] == vowels[j]) {
+cnt++;
+break;
+}
+}
+i++;
+len++;
+}
+printf("%d\n", cnt);
+return 0;
+}
