@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main() {
+char c1 ='a', c2 ='b', c3 = c1+c2;
+printf("%c\n", c3) ;
+return 0;
+}
+// A= 65, B : 66, ...... Z=90
+// a : 97, b :98, z........
+gap btwn small a and caps A is 32
+
+
+#include<stdio.h>
+int main() {
+char word[100] = "ewhwjgwngr";
+int i;
+for( i=0; word[i] !='\0'; i++) {
+if ( word[i] >90) {
+word[i] -=32;
+}
+}
+printf("%s\n", word);
+}
+
+ORRRRRR
+
+#include<stdio.h>
+#include <ctype.h>
+#include <string.h>
+int main() {
+char word[100];
+scanf("%s", word);
+int i;
+for( i=0; i<strlen(word); i++) {
+word[i] = toupper(word[i]);
+}
+printf("%s", word);
+}
