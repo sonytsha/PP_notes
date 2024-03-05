@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main() {
+char sentence1[100] = "Be a top programmer";
+char sentence2[100];
+int i;
+for( i =0; sentence1[i] !='\0'; i++) {
+sentence2[i] = sentence1[i];
+}
+sentence2[i] = '\0';
+printf("%s\n", sentence2);
+}
+
+
+OR 
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char source[] = "Hello, world!";
+    char destination[20]; // Ensure destination buffer is large enough to hold the source string
+
+    // Copy the string from source to destination
+    strcpy(destination, source);
+
+    // Print the copied string
+    printf("Copied string: %s\n", destination);
+
+    return 0;
+}
