@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+int arr[3] = {7,6,5};
+printf(" %lld %lld %lld %lld\n", &arr, &arr[0], &arr[1], &arr[2]);
+return 0;
+}
+
+// elements are stored contiguously
+// arr = arr[0]
+// name of the array = > address of 1st element
+// arr0 is the base address of the address
+
+
