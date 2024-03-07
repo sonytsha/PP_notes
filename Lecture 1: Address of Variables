@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main() {
+int n = 10;
+printf("%p\n", n); // this will print hexa decimal
+printf("%lld", n); // this will print in long long int
+}
