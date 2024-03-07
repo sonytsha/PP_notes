@@ -1,0 +1,11 @@
+// int** 
+
+#include<stdio.h>
+int main() {
+int a=5;
+int* b = &a;
+int**c = &b;
+printf("%d %d %d\n", a, *b, **c);
+printf("%lld %lld %lld", a,b,c);
+return 0;
+}
