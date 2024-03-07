@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+int arr[6] = {7,6,5,4,6,7};
+int i;
+for( i=0;i<6;i++) {
+printf("%d ", *arr);
+arr+;
+}
+printf("\n");
+return 0;
+} -- this code will give error as the adress of arr ca n not be changed
+
+// const pointer - can not be modified
