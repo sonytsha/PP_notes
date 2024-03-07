@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+char s1[100] = "abc";
+char s2[100] = "abc";
+int x = strcmp(s1,s2);
+printf("%d\n", x);
+return 0;
+}
+
+// lexicographical order
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+char s1[100] = "abcd";
+char s2[100] = "abce";
+int x = strcmp(s1,s2);
+printf("%d\n", x);
+return 0;
+}
+
+output : ascii code of d - ascii code of e
+
+
+
+
+if s2 is present on s2
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+char s1[100] = "abcd";
+char s2[100] = "abc";
+char *x = strstr(s1,s2);
+printf("%s\n", x);
+return 0;
+}
