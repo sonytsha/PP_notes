@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main() {
+int x;
+int* y = &x;
+printf("%lld %lld %lld\n", y, y-2,y+2);
+return 0;
+}
+
+// constants may be added/sub from a ptr
+
+// address + ( 4 * 2) -- 4 for int
+// mul/div with constants not allowed
+
+// sub 2 [ointers if belong of same datatype
+#include<stdio.h>
+int main() {
+int x,y,z;
+int* p1 = &x;
+int* p2 = &z;
+printf("%lld %lld %d\n", p1, p2, p1-p2);
+if(p1>p2) {
+printf("hi\n");
+}
+return 0;
+}
+
+
+// p1-p2 = (p1-p2)/sizeof(int)
+// comparison 2 pointes is possible if belong to same datatype
+
+// addition, multiplication and division of 2 ppinters are not alllwoed
