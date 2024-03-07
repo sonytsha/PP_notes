@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main() {
+int x = 9;
+int* y = &x;
+printf("%lld\n", y); // this gives the address of x
+printf("%lld", *y); // this gives the valye of x
+}
