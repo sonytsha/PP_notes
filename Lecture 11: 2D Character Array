@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+char names[5][100] = {"mike", "john","sony", "shaw"};
+int i;
+for(i=0;i<5;i++) {
+printf("%s\n", names[i]);
+}
+return 0;
+}
+
+ORRRR take user input
+
+#include<stdio.h>
+int main() {
+char names[5][100] ;
+int i;
+for(i=0;i<5;i++) {
+scanf("%s\n", names[i]);
+}
+for(i=0;i<5;i++) {
+printf("%s\n", names[i]);
+}
+}
+
+return 0;
+}
