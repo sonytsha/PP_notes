@@ -1,0 +1,48 @@
+#include<stdio.h>
+int getSum(int a, int b) {
+return a+b;
+}
+int main() {
+int a,b;
+scanf("%d%d", &a, &b);
+int c= getSum(a,b);
+printf("%d\n", c);
+}
+
+ANOTHER WAY - 
+
+#include<stdio.h>
+void getSum(int a, int b) {
+printf("%d", a+b);
+}
+int main() {
+int a,b;
+scanf("%d%d", &a, &b);
+getSum(a,b);
+}
+
+
+VOID MEANS NOT RETURNING ANYTHING
+
+
+#include<stdio.h>
+int getRandomInt() {
+return 9;
+}
+int main() {
+int x = getRandomInt();
+printf("%d\n", x);
+}
+
+
+no input no putput case : 
+#include<stdio.h>
+void printRandomInt() {
+printf("99\n");
+}
+int main() {
+printRandomInt();
+return 0;
+}
+
+
