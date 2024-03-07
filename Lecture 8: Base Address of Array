@@ -10,4 +10,15 @@ return 0;
 // name of the array = > address of 1st element
 // arr0 is the base address of the address
 
+// *(arr+i) ===> arr[i]
 
+#include<stdio.h>
+int main() {
+int arr[6] = {7,6,5,4,6,7};
+int i;
+for( i=0;i<7;i++) {
+printf("%d ", *(arr+i));
+}
+printf("\n");
+return 0;
+}
