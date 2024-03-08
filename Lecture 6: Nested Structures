@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct Education {
+char degree[100];
+int gradYear;
+char college[60];
+};
+
+struct Person { 
+char name[80];
+int age;
+char gender;
+struct Education edu; // nested structure
+};
+
+
+int main() {
+struct Education e = {"B.tech", 2022, "CIEM"};
+ struct Person p  = {"sony", 22, "f", e};
+printf("%s \n", p.edu.degree);
+
+/* char s[100] ;
+strcpy(s,"abcd"); */
+
+return 0;
+}
