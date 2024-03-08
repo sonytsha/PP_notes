@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct Point {
+int x,y;
+} p3,p4;
+
+int main() {
+struct Point p1 = {0,1};
+// to access it you must use .operator
+printf("%d", p3.x);
+printf("%d", p4.y);
+return 0;
+}
