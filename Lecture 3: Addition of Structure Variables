@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct ComplexNum {
+int real, img;
+} p1,p2;
+
+// two struct variable can not be addeed/ sub or any arithmetic operation
+// complex numBers  
+
+int main() {
+struct ComplexNum num1 = {2,7};
+struct ComplexNum num2 = {3,4};
+struct ComplexNum num3 = {num1.real + num2.real, num1.img + num1.img};
+printf("%d %d\n", num3.real, num3.img);
+return 0;
+}
