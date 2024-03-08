@@ -1,0 +1,33 @@
+#include<stdio.h>
+void func(int a) {
+a=6;
+printf("inside func : %d\n", a);
+}
+int main() {
+int a=5;
+func(a);
+printf("inside main : %d\n",a):
+return 0;
+}
+
+// change not reflecting
+// main :: a| m1,func :: a|m2
+// pass by value
+// a new copy is created
+
+
+#include<stdio.h>
+void func(int* a) {
+a=6;
+printf("inside func : %d\n", a);
+}
+int main() {
+int a=5;
+func(&a);
+printf("inside main : %d\n",a):
+return 0;
+}
+// pass the address
+// pass by reference
+
+
