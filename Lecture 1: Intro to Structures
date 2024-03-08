@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct Point{
+int x,y;
+}; // outside the function
+
+int main() {
+struct Point p; // struct Point = datatype, p = variable name
+p.x = 5;
+p.y = 1;
+p.x++;
+printf(%d %d\n", p.x, p.y);
+return 0;
+}
+
+// using dot operator
+// you can access it only using .
+
