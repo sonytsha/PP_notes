@@ -1,0 +1,31 @@
+#include<stdio.h>
+void swap(int* first, int* second) {
+int temp = *first;
+*first = *second;
+*second = temp;
+}
+int main() {
+int a =5, b=6;
+swap(&a,&b);
+printf("%d %d\n", a,b);
+return 0;
+}
+
+#include<stdio.h>
+void func1(int y) {
+y=9;
+}
+void func(int* x) {
+*x = 6;
+func1(*x);
+}
+int main() {
+int a=5;
+func(&a);
+printf("%d\n", a);
+return 0;
+}
+
+
+
+
