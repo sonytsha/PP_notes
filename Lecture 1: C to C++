@@ -1,0 +1,6 @@
+c is procedural language
+C++ is object oriented programming language
+
+
+#include<bits/stdc++.h>
+using namespace std;
