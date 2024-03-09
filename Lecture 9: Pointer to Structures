@@ -8,7 +8,7 @@ double n;
 int main() {
 struct A a = {4,7.6};
 struct A* ptr = &a;
-printf("%ld %lf \n", (*ptr).m, (*ptr).n);
+printf("%ld %lf \n", ptr-> m, ptr ->n);
 return 0;
 }
 
