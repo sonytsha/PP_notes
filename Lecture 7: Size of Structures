@@ -1,0 +1,9 @@
+#include<stdio.h>
+struct Person {
+int name,
+char c };
+
+int main() {
+printf("%d\n", sizeof(struct Person));
+return 0;
+}
