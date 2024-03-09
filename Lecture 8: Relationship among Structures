@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+struct Z { 
+long m;
+double n;
+};
+
+struct A {
+int x,y;
+char c;
+};
+
+struct Y {
+char p;
+float q;
+struct Z z;
+struct A a;
+};
+
+struct X {
+int a;
+int b;
+int Y y;
+int Z z;
+};
+int main() {
+return 0;
+}
+
